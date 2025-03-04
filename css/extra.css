@@ -31,64 +31,6 @@
     100% { transform: scale(1); }
 }
 
-/* Bounce Animation */
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-20px); }
-    60% { transform: translateY(-10px); }
-}
-
-/* Auto Carousel Animation */
-@keyframes autoScroll {
-    from { transform: translateX(0); }
-    to { transform: translateX(-100%); }
-}
-
-/* Image Hover Effects */
-.image-hover {
-    overflow: hidden;
-    position: relative;
-}
-
-.image-hover img {
-    transition: transform 0.5s ease;
-}
-
-.image-hover:hover img {
-    transform: scale(1.1);
-}
-
-.image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(31, 69, 110, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.image-hover:hover .image-overlay {
-    opacity: 1;
-}
-
-/* Parallax Effect */
-.parallax {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
 /* Loading Animation */
 .loading {
     position: fixed;
@@ -112,7 +54,7 @@ html {
 .spinner {
     width: 40px;
     height: 40px;
-    border: 4px solid rgba(212, 175, 55, 0.3);
+    border: 4px solid rgba(107, 154, 196, 0.3);
     border-radius: 50%;
     border-top-color: var(--color-primary);
     animation: spin 1s linear infinite;
@@ -152,6 +94,7 @@ html {
     overflow: hidden;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-md);
+    height: 300px; /* Fixed height for consistency */
 }
 
 .gallery-image img {
@@ -159,10 +102,6 @@ html {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.gallery-image:hover img {
-    transform: scale(1.1);
 }
 
 .gallery-caption {
@@ -179,30 +118,6 @@ html {
 
 .gallery-image:hover .gallery-caption {
     transform: translateY(0);
-}
-
-/* Form Input Animation */
-.form-input-animation {
-    position: relative;
-}
-
-.form-input-animation label {
-    position: absolute;
-    left: 1rem;
-    top: 0.75rem;
-    background-color: white;
-    padding: 0 0.5rem;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    pointer-events: none;
-}
-
-.form-input-animation input:focus + label,
-.form-input-animation input:not(:placeholder-shown) + label {
-    top: -0.5rem;
-    left: 0.8rem;
-    font-size: 0.75rem;
-    color: var(--color-primary);
 }
 
 /* Social Icons Hover Effects */
@@ -225,7 +140,7 @@ html {
     box-shadow: var(--shadow-lg);
 }
 
-/* Dots Pagination for Carousel */
+/* Carousel Navigation */
 .carousel-dots {
     display: flex;
     justify-content: center;
@@ -236,7 +151,7 @@ html {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #ccc;
+    background-color: #ddd;
     margin: 0 5px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -247,35 +162,32 @@ html {
     transform: scale(1.3);
 }
 
-/* ===== UTILITIES ===== */
-
-/* Opacity Classes */
-.opacity-75 { opacity: 0.75; }
-.opacity-50 { opacity: 0.5; }
-.opacity-25 { opacity: 0.25; }
-
-/* Z-index Utilities */
-.z-behind { z-index: -1; }
-.z-normal { z-index: 1; }
-.z-above { z-index: 10; }
-.z-top { z-index: 100; }
-
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
+/* Image Hover Effects */
+.image-hover {
+    overflow: hidden;
+    position: relative;
+    border-radius: var(--radius-md);
+    background-color: var(--color-light); /* Background for placeholder */
+    height: 100%;
+    min-height: 250px; /* Minimum height for placeholders */
 }
 
-::-webkit-scrollbar-track {
-    background: var(--color-light);
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(65, 90, 119, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-::-webkit-scrollbar-thumb {
-    background: var(--color-primary-light);
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--color-primary);
+.image-hover:hover .image-overlay {
+    opacity: 1;
 }
 
 /* Aspect Ratio Helpers */
@@ -287,79 +199,94 @@ html {
 }
 
 .aspect-ratio-16-9 iframe,
-.aspect-ratio-16-9 video,
-.aspect-ratio-16-9 img {
+.aspect-ratio-16-9 video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
-/* Text Gradients */
-.text-gradient {
-    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
 }
 
-/* Gold Border Effect */
-.gold-border {
-    border: 2px solid var(--color-primary);
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+::-webkit-scrollbar-track {
+    background: var(--color-light);
 }
 
-/* Premium Card Effect */
-.premium-card {
-    background: linear-gradient(135deg, #f8f8f8, #ffffff);
-    border-radius: var(--radius-lg);
-    padding: 2rem;
-    border: 1px solid rgba(212, 175, 55, 0.3);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary-light);
+    border-radius: 4px;
 }
 
-/* Animations for Page Load */
-.animate-on-load {
-    opacity: 0;
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
 }
 
-.animate-fade-in {
-    animation: fadeIn 1s forwards;
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
 }
 
-.animate-slide-up {
-    animation: slideUp 1s forwards;
-}
-
-.animate-slide-in-right {
-    animation: slideInRight 1s forwards;
-}
-
-.animate-slide-in-left {
-    animation: slideInLeft 1s forwards;
-}
-
-/* Animation Delays */
-.delay-100 { animation-delay: 0.1s; }
-.delay-200 { animation-delay: 0.2s; }
-.delay-300 { animation-delay: 0.3s; }
-.delay-400 { animation-delay: 0.4s; }
-.delay-500 { animation-delay: 0.5s; }
-
-/* Responsive Iframe Container */
-.responsive-iframe-container {
+/* Improved Placeholder Styles for Images */
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
     position: relative;
-    overflow: hidden;
-    padding-top: 56.25%; /* 16:9 aspect ratio */
+    border-radius: var(--radius-md);
 }
 
-.responsive-iframe-container iframe {
+.image-placeholder::after {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' stroke='%236B9AC4' stroke-width='1' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M0 0h24v24H0z' stroke='none'/%3E%3Crect x='4' y='4' width='16' height='16' rx='2' /%3E%3Ccircle cx='8.5' cy='8.5' r='1.5' /%3E%3Cpolyline points='21 15 16 10 5 21' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center 40%;
+    background-size: 48px;
+    opacity: 0.3;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    .gallery-image {
+        height: 250px;
+    }
+    
+    .image-hover {
+        min-height: 200px;
+    }
+    
+    /* Optimize animations for mobile */
+    .animate-on-load {
+        animation-duration: 0.5s;
+    }
+    
+    /* Touch-friendly hover states */
+    .image-overlay {
+        opacity: 0.5;
+        background: rgba(65, 90, 119, 0.5);
+    }
+}
+
+/* Tablet Optimizations */
+@media (min-width: 769px) and (max-width: 1023px) {
+    .gallery-image {
+        height: 280px;
+    }
 }
