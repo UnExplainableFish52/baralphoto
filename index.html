@@ -178,7 +178,7 @@
             width: 25px;
             height: 3px;
             margin: 5px auto;
-            background-color: white;
+            background-color: rgb(242, 139, 139);
             transition: all 0.3s ease;
         }
         
@@ -300,61 +300,231 @@
             }
         }
         
-        /* About Section */
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
+        /* About Us Section */
+.section.about {
+    padding: 4rem 0 0 0;
+    background: rgb(209, 227, 189); /* pastel green */
+}
+
+.studio-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.studio-banner img {
+    width: 100%;
+    max-width: 1200px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(44,62,80,0.16);
+    background: rgba(255,255,255,0.08);
+    border: 2px solid rgba(255,255,255,0.15);
+    transition: height 0.3s;
+}
+
+/* Glassmorphic Description */
+.about-description {
+    margin: 0 auto 3.5rem auto;
+    padding: 2.5rem 2rem;
+    max-width: 850px;
+    background: rgba(255,255,255,0.19);
+    border-radius: 20px;
+    box-shadow: 0 4px 32px rgba(44,62,80,0.14);
+    backdrop-filter: blur(14px) saturate(170%);
+    -webkit-backdrop-filter: blur(14px) saturate(170%);
+    border: 1.5px solid rgba(255,255,255,0.24);
+    color: #222;
+    position: relative;
+}
+
+.about-description h3 {
+    font-size: 2rem;
+    color: var(--primary-color, #2a2a8c);
+    margin-bottom: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.about-description p {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    margin-bottom: 1.1rem;
+    color: #222;
+}
+
+.about-info {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.2rem;
+    font-size: 1.05rem;
+    color: var(--primary-color, #2a2a8c);
+}
+.about-info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.about-info-item i {
+    font-size: 1.18rem;
+    color: var(--secondary-color, #ff6b6b);
+}
+
+/* Team Section Layout */
+.team-section {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.team-section .section-title {
+    margin-bottom: 2.2rem;
+    font-size: 2.1rem;
+}
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.2rem;
+    justify-content: center;
+}
+
+/* Glassmorphic Team Card */
+.team-card {
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(44,62,80,0.18);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1.5px solid rgba(255, 255, 255, 0.28);
+    width: 300px;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.18s;
+    padding: 2rem 1rem 1.5rem 1rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.team-card:hover {
+    transform: translateY(-7px) scale(1.04);
+    box-shadow: 0 12px 36px rgba(44,62,80,0.22);
+    background: rgba(255, 255, 255, 0.33);
+    border-color: var(--accent-color, #ffd166);
+}
+
+.team-photo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.14);
+    background: rgba(230, 247, 233, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.98) contrast(1.05);
+}
+
+.team-info h3 {
+    font-size: 1.4rem;
+    color: var(--primary-color, #2a2a8c);
+    font-weight: 700;
+    text-align: center;
+    margin: 0.5rem 0 0.3rem 0;
+    letter-spacing: 0.5px;
+}
+
+.team-titles {
+    text-align: center;
+    font-size: 0.97rem;
+    color: var(--secondary-color, #ff6b6b);
+    margin-bottom: 0.7rem;
+    font-weight: 500;
+}
+
+.team-titles span {
+    background: rgba(162, 233, 232, 0.35);
+    color: #222;
+    padding: 4px 12px;
+    border-radius: 30px;
+    margin: 0 3px;
+    font-size: 0.87rem;
+    display: inline-block;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(162, 233, 232, 0.18);
+}
+
+.team-bio {
+    text-align: center;
+    font-size: 1.05rem;
+    color: #333;
+    font-style: italic;
+    margin-top: 0.5rem;
+    opacity: 0.85;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 1200px) {
+    .studio-banner img {
+        height: 260px;
+    }
+    .about-description {
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .studio-banner img {
+        height: 180px;
+    }
+    .about-description {
+        padding: 1.2rem 0.5rem;
+    }
+    .team-card {
+        width: 92vw;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .team-cards {
+        flex-direction: column;
+        gap: 1.2rem;
+        align-items: center;
+    }
+    .about-info {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .studio-banner img {
+        height: 110px;
+    }
+    .about-description {
+        padding: 1rem 0.1rem;
+    }
+    .team-card {
+        width: 96vw;
+        max-width: 400px;
+    }
+}
+        /* additional banner section*/
         
-        .about-img {
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .about-img img {
-            width: 100%;
-            height: auto;
-            transition: transform 0.5s ease;
-        }
-        
-        .about-img:hover img {
-            transform: scale(1.05);
-        }
-        
-        .about-text h3 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: var(--primary-color);
-        }
-        
-        .about-text p {
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-        }
-        
-        .about-info {
-            margin-top: 2rem;
-        }
-        
-        .about-info-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-        
-        .about-info-item i {
-            color: var(--primary-color);
-            margin-right: 1rem;
-            font-size: 1.4rem;
-        }
         
         /* Services Section */
         .services {
-            background-color: #f9f9f9;
-        }
+        background-color: linear-gradient(120deg, #eafecb 0%, #aee6ff 100%);        }
         
         .services-container {
             display: grid;
@@ -363,7 +533,7 @@
         }
         
         .service-card {
-            background: white;
+            background: rgb(9, 223, 141);
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -761,7 +931,7 @@
                 left: -100%;
                 top: 5rem;
                 flex-direction: column;
-                background-color: white;
+                background: linear-gradient(120deg, #eafecb 0%, #aee6ff 100%);
                 width: 100%;
                 text-align: center;
                 transition: 0.3s;
@@ -887,39 +1057,95 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="section about" id="about">
-        <div class="container">
-            <h2 class="section-title fade-in">About Me</h2>
-            <div class="about-content">
-                <div class="about-img fade-in">
-                    <img src="img/photographer.jpg" alt="Bishal Baral - Professional Photographer">
+    <!-- About Us Section -->
+<section class="section about" id="about">
+    <div class="container">
+        <h2 class="section-title fade-in">About Us</h2>
+        
+        <!-- Studio Banner -->
+        <div class="studio-banner fade-in" style="width:100%;display:flex;justify-content:center;margin-bottom:2.5rem;">
+            <img src="/img/baral_photo_studio.jpg" alt="Baral Photo Studio Banner" style="width:100%;max-width:1200px;height:360px;object-fit:cover;border-radius:18px;box-shadow:0 4px 32px rgba(44,62,80,0.10);">
+        </div>
+        
+        <!-- Studio Description -->
+        <div class="about-description fade-in" style="max-width:850px;margin:0 auto 3.5rem auto;">
+            <h3 style="font-size:2rem;color:var(--primary-color);margin-bottom:1.2rem;">Baral Photo Studio</h3>
+            <p style="font-size:1.15rem;line-height:1.7;margin-bottom:1.2rem;padding: 5vw;">
+                Welcome to Baral Photo Studio! We’re a passionate team of creative professionals specializing in photography and videography. Our studio is dedicated to capturing life’s most meaningful moments with artistry, technical expertise, and a collaborative spirit. Whether it’s weddings, portraits, or special events, we believe every story deserves to be told beautifully.
+            </p>
+            <p style="font-size:1.13rem;line-height:1.7;padding: 5vw;">
+                With state-of-the-art equipment and years of combined experience, our team strives to deliver exceptional quality and a personalized experience for every client. From candid shots to cinematic films, we work together to make memories last forever!
+            </p>
+            <div class="about-info" style="margin-top:2rem;">
+                <div class="about-info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Kawasoti-3, Savapati Chowk, Nawalpur</span>
                 </div>
-                <div class="about-text fade-in">
-                    <h3>Bishal Baral</h3>
-                    <p>Welcome to Baral Photo Studio, where we specialize in capturing life's most precious moments with artistic vision and technical expertise. With over 2 years of experience in professional photography and videography, we pride ourselves on delivering exceptional quality and personalized service.</p>
-                    <p>Our studio is equipped with state-of-the-art equipment and led by Bishal Baral, a passionate photographer dedicated to creating timeless memories for our clients.</p>
-                    <div class="about-info">
-                        <div class="about-info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Kawasoti-3, Savapati Chowk, Nawalpur</span>
-                        </div>
-                        <div class="about-info-item">
-                            <i class="fas fa-phone"></i>
-                            <span>
-                                <a href="tel:+9779821920690">+977 9821920690</a><br>
-                                <a href="tel:+9779846961105">+977 9846961105</a>
-                            </span>
-                        </div>
-                        <div class="about-info-item">
-                            <i class="fas fa-envelope"></i>
-                            <span><a href="mailto:baralphoto@gmail.com">baralphoto@gmail.com</a></span>
-                        </div>
+                <div class="about-info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <a href="tel:+9779821920690">+977 9821920690</a><br>
+                        <a href="tel:+9779846961105">+977 9846961105</a>
+                    </span>
+                </div>
+                <div class="about-info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span><a href="mailto:baralphoto@gmail.com">baralphoto@gmail.com</a></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Meet Our Team Section -->
+        <div class="team-section fade-in" style="margin-top:2rem;">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="team-cards">
+                <!-- Team Member 1 -->
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="img/team/ceo.jpg" alt="Bishal Baral">
+                    </div>
+                    <div class="team-info">
+                        <h3>Bishal Baral</h3>
+                        <p class="team-titles">
+                            <span>CEO</span> · 
+                            <span>Photographer</span> · 
+                            <span>Editor</span>
+                        </p>
+                        <p class="team-bio">"I capture moments and turn them into memories you'll cherish forever."</p>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="img/team/assistant1.jpg" alt="Sujan Karki">
+                    </div>
+                    <div class="team-info">
+                        <h3>Sujan Karki</h3>
+                        <p class="team-titles">
+                            <span>Assistant</span> · 
+                            <span>Junior Photographer</span>
+                        </p>
+                        <p class="team-bio">"Making every shoot smooth and fun—ready to help wherever needed!"</p>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="img/team/assistant2.jpg" alt="Aayush Thapa">
+                    </div>
+                    <div class="team-info">
+                        <h3>Aayush Thapa</h3>
+                        <p class="team-titles">
+                            <span>Assistant</span> · 
+                            <span>Junior Photographer</span>
+                        </p>
+                        <p class="team-bio">"Love capturing laughter and candid moments in every event."</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Services Section -->
     <section class="section services" id="services">
