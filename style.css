@@ -744,7 +744,15 @@ p {
    ========================================================================== */
 
 .about {
-  background: var(--gradient-section);
+  background: var(--gradient-hero);
+  color: var(--color-white);
+}
+
+.about .section-title,
+.about .section-label { color: var(--color-white); }
+.about .section-description { 
+  color: var(--color-gray-300); 
+  font-weight: var(--font-weight-medium);
 }
 
 .about-grid {
@@ -795,15 +803,17 @@ p {
 .about-content-full h3 {
   font-size: var(--font-size-3xl);
   margin-bottom: var(--space-6);
-  color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: var(--font-weight-bold);
 }
 
 .about-content-full p {
   font-size: var(--font-size-lg);
-  color: var(--color-gray-700);
+  color: var(--color-gray-300);
   line-height: var(--line-height-relaxed);
   margin-bottom: var(--space-6);
   text-align: justify;
+  font-weight: var(--font-weight-medium);
 }
 
 .about-info-row {
@@ -857,14 +867,16 @@ p {
 .about-content h3 {
   font-size: var(--font-size-3xl);
   margin-bottom: var(--space-6);
-  color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: var(--font-weight-bold);
 }
 
 .about-content p {
   font-size: var(--font-size-base);
-  color: var(--color-gray-700);
+  color: var(--color-gray-300);
   line-height: var(--line-height-relaxed);
   margin-bottom: var(--space-6);
+  font-weight: var(--font-weight-medium);
 }
 
 .about-info {
@@ -942,17 +954,18 @@ p {
 .studio-showcase-description {
   margin-top: var(--space-10);
   padding: var(--space-8) var(--space-10);
-  background: linear-gradient(135deg, rgba(45, 58, 45, 0.04) 0%, rgba(224, 123, 83, 0.06) 100%);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-xl);
   border-left: 4px solid var(--color-secondary);
 }
 
 .studio-showcase-description p {
   font-size: var(--font-size-lg);
-  color: var(--color-gray-700);
+  color: var(--color-gray-300);
   line-height: var(--line-height-relaxed);
   text-align: justify;
   max-width: 100%;
+  font-weight: var(--font-weight-medium);
 }
 
 @media (max-width: 768px) {
@@ -1046,7 +1059,17 @@ p {
    9. SERVICES SECTION
    ========================================================================== */
 
-.services { background-color: var(--color-cream); }
+.services { 
+  background: var(--gradient-hero);
+  color: var(--color-white);
+}
+
+.services .section-title,
+.services .section-label { color: var(--color-white); }
+.services .section-description { 
+  color: var(--color-gray-300); 
+  font-weight: var(--font-weight-medium);
+}
 
 .services-grid {
   display: grid;
@@ -1122,7 +1145,17 @@ p {
    10. PORTFOLIO SECTION
    ========================================================================== */
 
-.portfolio { background-color: #7edea1a7; }
+.portfolio { 
+  background: var(--gradient-hero);
+  color: var(--color-white);
+}
+
+.portfolio .section-title,
+.portfolio .section-label { color: var(--color-white); }
+.portfolio .section-description { 
+  color: var(--color-gray-300);
+  font-weight: var(--font-weight-medium);
+}
 
 .portfolio-filters {
   display: flex;
@@ -1135,10 +1168,10 @@ p {
 .filter-btn {
   padding: var(--space-3) var(--space-6);
   font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-gray-700);
-  background-color: transparent;
-  border: 2px solid var(--color-gray-300);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: var(--radius-full);
   cursor: pointer;
   transition: 
@@ -1151,6 +1184,7 @@ p {
 .filter-btn:hover {
   color: var(--color-secondary);
   border-color: var(--color-secondary);
+  background-color: rgba(224, 123, 83, 0.15);
   transform: translateY(-2px);
 }
 
@@ -1517,9 +1551,9 @@ select.form-control {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr repeat(3, 1fr);
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
   gap: var(--space-12);
-  max-width: 1100px;
+  max-width: 1200px;
   margin-inline: auto;
 }
 
@@ -1624,6 +1658,7 @@ select.form-control {
 .footer-links a {
   font-size: var(--font-size-sm);
   color: var(--color-gray-400);
+  white-space: nowrap;
   transition: 
     color var(--transition-base),
     transform var(--transition-base);
