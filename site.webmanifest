@@ -1,6 +1,10 @@
 {
-  "name": "Baral Photo",
+  "name": "Baral Photo Studio",
   "short_name": "Baral Photo",
+  "description": "Professional photography and videography services in Nawalpur, Nepal. Capturing your precious moments with artistry.",
+  "start_url": "/",
+  "scope": "/",
+  "id": "/",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +19,11 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#c48d8d",
-  "background_color": "#c5a0a0",
-  "display": "standalone"
+  "theme_color": "#1a1a2e",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "categories": ["photography", "business", "lifestyle"],
+  "lang": "en",
+  "dir": "ltr"
 }

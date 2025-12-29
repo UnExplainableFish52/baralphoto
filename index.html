@@ -1,1614 +1,992 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- ========== META TAGS ========== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Baral Photo Studio - Professional photography and videography services in Kawasoti, Nawalpur. Capturing your special moments that last forever.">
-    <meta property="og:title" content="Baral Photo Studio | Professional Photography Services">
-    <meta property="og:description" content="Beesu Captures the Special Moments that Last Forever in Your Life">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>Baral Photo Studio | Professional Photography & Videography in Nawalpur, Nepal</title>
+    <meta name="title" content="Baral Photo Studio | Professional Photography & Videography in Nawalpur, Nepal">
+    <meta name="description" content="Baral Photo Studio offers premium wedding photography, portrait sessions, event coverage, and cinematic videography services in Kawasoti, Nawalpur. Book your session today!">
+    <meta name="keywords" content="photography studio Nepal, wedding photographer Nawalpur, Kawasoti photography, videography Nepal, portrait photography, event photography, Baral Photo Studio">
+    <meta name="author" content="Baral Photo Studio">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://baralphoto.com">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://baralphoto.com">
+    <meta property="og:title" content="Baral Photo Studio | Professional Photography & Videography">
+    <meta property="og:description" content="Capturing your precious moments with artistry and professionalism. Premium wedding, portrait, and event photography in Nawalpur, Nepal.">
+    <meta property="og:image" content="https://baralphoto.com/img/baral_photo_studio.jpg">
+    <meta property="og:image:alt" content="Baral Photo Studio - Professional Photography Services">
+    <meta property="og:site_name" content="Baral Photo Studio">
+    <meta property="og:locale" content="en_US">
     
-    <title>Baral Photo Studio | Professional Photography Services in Nawalpur</title>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://baralphoto.com">
+    <meta name="twitter:title" content="Baral Photo Studio | Professional Photography & Videography">
+    <meta name="twitter:description" content="Capturing your precious moments with artistry and professionalism. Premium wedding, portrait, and event photography in Nawalpur, Nepal.">
+    <meta name="twitter:image" content="https://baralphoto.com/img/baral_photo_studio.jpg">
     
-    <!-- Google Fonts -->
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#2d3a2d">
+    <meta name="msapplication-TileColor" content="#2d3a2d">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- ========== FONTS ========== -->
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter (Primary) + Playfair Display (Headings) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     
-    <!-- Custom Styles -->
-    <style>
-        /* Base Styles */
-        :root {
-            --primary-color: #2a2a8c;
-            --secondary-color: #ff6b6b;
-            --accent-color: #ffd166;
-            --dark-color: #222222;
-            --light-color: #f8f9fa;
-            --gradient-start: #c5b8a9;
-            --gradient-end: #a2c9cf;
-            --title-cream: #f5e9c4;
-            --subtitle-teal: #a2e1e8;
-            --btn-yellow: #ffb624;
-            --btn-teal: #a2c9cf;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        body {
-            font-family: 'Montserrat', sans-serif;
-            line-height: 1.6;
-            color: var(--dark-color);
-            background-color: rgb(209, 227, 189);
-        }
-        
-        /* Utility Classes */
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-        
-        .section {
-            padding: 5rem 0;
-        }
-        
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 3rem;
-            position: relative;
-        }
-        
-        .section-title::after {
-            content: '';
-            position: absolute;
-            width: 80px;
-            height: 4px;
-            background: var(--primary-color);
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 0.8rem 2rem;
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        
-        .btn:hover {
-            background: var(--secondary-color);
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        /* Header Styles */
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: purple;
-            color: gold;
-            z-index: 1000;
-            transition: all 0.3s ease;
-            padding: 20px 0;
-        }
-        
-        .header.scrolled {
-            background-color: rgba(125, 0, 125, 0.65);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 0.5rem 0;
-            color: gold;
-        }
-        
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: rgb(226, 255, 6);
-            text-decoration: none;
-        }
-        
-        .header.scrolled .logo {
-            color: gold;
-        }
-        
-        .nav-menu {
-            display: flex;
-            list-style: none;
-        }
-        
-        .nav-item {
-            margin-left: 2rem;
-        }
-        
-        .nav-link {
-            text-decoration: none;
-            color: rgb(7, 231, 252);
-            font-weight: 600;
-            font-size: 1rem;
-            transition: color 0.3s ease;
-        }
-        
-        .header.scrolled .nav-link {
-            color: var(--dark-color);
-        }
-        
-        .nav-link:hover {
-            color: var(--accent-color);
-        }
-        
-        .hamburger {
-            display: none;
-            cursor: pointer;
-        }
-        
-        .bar {
-            display: block;
-            width: 25px;
-            height: 3px;
-            margin: 5px auto;
-            background-color: rgb(242, 139, 139);
-            transition: all 0.3s ease;
-        }
-        
-        .header.scrolled .bar {
-            background-color: var(--dark-color);
-        }
-        
-        .hero {
-            height: 100vh;
-            background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            text-align: center;
-        }
-        
-        .hero-content {
-            max-width: 800px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .hero-tag {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 8px 20px;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: var(--title-cream);
-            margin-bottom: 30px;
-            backdrop-filter: blur(5px);
-        }
-        
-        .hero-name {
-            font-size: 4rem;
-            font-weight: 700;
-            color: var(--title-cream);
-            margin-bottom: 15px;
-            line-height: 1.1;
-        }
-        
-        .hero-profession {
-            font-size: 3.5rem;
-            font-weight: 700;
-            color: var(--subtitle-teal);
-            margin-bottom: 30px;
-            line-height: 1.1;
-        }
-        
-        .hero-description {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin-bottom: 40px;
-            color: white;
-            line-height: 1.6;
-        }
-        
-        .hero-buttons {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 80px;
-        }
-        
-        .hero-btn {
-            padding: 15px 40px;
-            border-radius: 50px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .btn-portfolio {
-            background-color: var(--btn-yellow);
-            color: #333;
-        }
-        
-        .btn-contact {
-            background-color: var(--btn-teal);
-            color: white;
-        }
-        
-        .btn-portfolio:hover, .btn-contact:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-        
-        .scroll-indicator {
-            position: absolute;
-            bottom: 40px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: white;
-            font-size: 0.9rem;
-        }
-        
-        .scroll-indicator .arrow {
-            margin-top: 10px;
-            font-size: 1.5rem;
-            animation: bounce 2s infinite;
-        }
-        
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
+    <!-- ========== STYLESHEETS ========== -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- ========== STRUCTURED DATA ========== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://baralphoto.com",
+        "name": "Baral Photo Studio",
+        "image": "https://baralphoto.com/img/baral_photo_studio.jpg",
+        "url": "https://baralphoto.com",
+        "telephone": "+977-9821920690",
+        "email": "baralphoto@gmail.com",
+        "description": "Professional photography and videography studio specializing in weddings, portraits, events, and documentary production in Nawalpur, Nepal.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Kawasoti-2, Savapati Chowk",
+            "addressLocality": "Nawalpur",
+            "addressRegion": "Gandaki",
+            "addressCountry": "NP"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "27.642717",
+            "longitude": "84.123722"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                "opens": "09:00",
+                "closes": "18:00"
             }
-            40% {
-                transform: translateY(-10px);
-            }
-            60% {
-                transform: translateY(-5px);
-            }
+        ],
+        "priceRange": "$$",
+        "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "27.642717",
+                "longitude": "84.123722"
+            },
+            "geoRadius": "100000"
+        },
+        "sameAs": [
+            "https://www.facebook.com/baralphoto",
+            "https://www.youtube.com/@BeeGraphy"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Photography Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Wedding Photography"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Portrait Photography"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Event Photography"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Wedding Videography"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Documentary Production"
+                    }
+                }
+            ]
         }
-        
-        /* About Us Section */
-.section.about {
-    padding: 4rem 0 0 0;
-    background: rgb(209, 227, 189); /* pastel green */
-}
-
-.studio-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2.5rem;
-}
-
-.studio-banner img {
-    width: 100%;
-    max-width: 1200px;
-    height: 360px;
-    object-fit: cover;
-    border-radius: 22px;
-    box-shadow: 0 8px 32px rgba(44,62,80,0.16);
-    background: rgba(255,255,255,0.08);
-    border: 2px solid rgba(255,255,255,0.15);
-    transition: height 0.3s;
-}
-
-/* Glassmorphic Description */
-.about-description {
-    margin: 0 auto 3.5rem auto;
-    padding: 2.5rem 2rem;
-    max-width: 850px;
-    background: rgba(255,255,255,0.19);
-    border-radius: 20px;
-    box-shadow: 0 4px 32px rgba(44,62,80,0.14);
-    backdrop-filter: blur(14px) saturate(170%);
-    -webkit-backdrop-filter: blur(14px) saturate(170%);
-    border: 1.5px solid rgba(255,255,255,0.24);
-    color: #222;
-    position: relative;
-}
-
-.about-description h3 {
-    font-size: 2rem;
-    color: var(--primary-color, #2a2a8c);
-    margin-bottom: 1.3rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-.about-description p {
-    font-size: 1.15rem;
-    line-height: 1.75;
-    margin-bottom: 1.1rem;
-    color: #222;
-}
-
-.about-info {
-    margin-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.2rem;
-    font-size: 1.05rem;
-    color: var(--primary-color, #2a2a8c);
-}
-.about-info-item {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-}
-.about-info-item i {
-    font-size: 1.18rem;
-    color: var(--secondary-color, #ff6b6b);
-}
-
-/* Team Section Layout */
-.team-section {
-    width: 100%;
-    margin-top: 3rem;
-}
-
-.team-section .section-title {
-    margin-bottom: 2.2rem;
-    font-size: 2.1rem;
-}
-
-.team-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.2rem;
-    justify-content: center;
-}
-
-/* Glassmorphic Team Card */
-.team-card {
-    background: rgba(255, 255, 255, 0.18);
-    border-radius: 22px;
-    box-shadow: 0 8px 32px rgba(44,62,80,0.18);
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    border: 1.5px solid rgba(255, 255, 255, 0.28);
-    width: 300px;
-    max-width: 90vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.18s;
-    padding: 2rem 1rem 1.5rem 1rem;
-    position: relative;
-    margin-bottom: 1.5rem;
-}
-
-.team-card:hover {
-    transform: translateY(-7px) scale(1.04);
-    box-shadow: 0 12px 36px rgba(44,62,80,0.22);
-    background: rgba(255, 255, 255, 0.33);
-    border-color: var(--accent-color, #ffd166);
-}
-
-.team-photo {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 1.2rem;
-    box-shadow: 0 2px 12px rgba(44,62,80,0.14);
-    background: rgba(230, 247, 233, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.team-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.98) contrast(1.05);
-}
-
-.team-info h3 {
-    font-size: 1.4rem;
-    color: var(--primary-color, #2a2a8c);
-    font-weight: 700;
-    text-align: center;
-    margin: 0.5rem 0 0.3rem 0;
-    letter-spacing: 0.5px;
-}
-
-.team-titles {
-    text-align: center;
-    font-size: 0.97rem;
-    color: var(--secondary-color, #ff6b6b);
-    margin-bottom: 0.7rem;
-    font-weight: 500;
-}
-
-.team-titles span {
-    background: rgba(162, 233, 232, 0.35);
-    color: #222;
-    padding: 4px 12px;
-    border-radius: 30px;
-    margin: 0 3px;
-    font-size: 0.87rem;
-    display: inline-block;
-    letter-spacing: 0.5px;
-    border: 1px solid rgba(162, 233, 232, 0.18);
-}
-
-.team-bio {
-    text-align: center;
-    font-size: 1.05rem;
-    color: #333;
-    font-style: italic;
-    margin-top: 0.5rem;
-    opacity: 0.85;
-}
-
-/* RESPONSIVENESS */
-@media screen and (max-width: 1200px) {
-    .studio-banner img {
-        height: 260px;
     }
-    .about-description {
-        padding: 2rem 1rem;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .studio-banner img {
-        height: 180px;
-    }
-    .about-description {
-        padding: 1.2rem 0.5rem;
-    }
-    .team-card {
-        width: 92vw;
-        max-width: 350px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .team-cards {
-        flex-direction: column;
-        gap: 1.2rem;
-        align-items: center;
-    }
-    .about-info {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .studio-banner img {
-        height: 110px;
-    }
-    .about-description {
-        padding: 1rem 0.1rem;
-    }
-    .team-card {
-        width: 96vw;
-        max-width: 400px;
-    }
-}
-        /* additional banner section*/
-        
-        
-        /* Services Section */
-        .services {
-        background-color: linear-gradient(120deg, #eafecb 0%, #aee6ff 100%);        }
-        
-        .services-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .service-card {
-            background: rgb(9, 223, 141);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .service-img {
-            height: 200px;
-            overflow: hidden;
-        }
-        
-        .service-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        
-        .service-card:hover .service-img img {
-            transform: scale(1.1);
-        }
-        
-        .service-content {
-            padding: 1.5rem;
-        }
-        
-        .service-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: var(--primary-color);
-        }
-        
-        .service-text {
-            margin-bottom: 1rem;
-            font-size: 0.95rem;
-        }
-        
-        /* Portfolio Section */
-        .portfolio-filter {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 2rem;
-        }
-        
-        .filter-btn {
-            padding: 0.5rem 1.5rem;
-            margin: 0.5rem;
-            background: transparent;
-            border: 2px solid var(--primary-color);
-            border-radius: 30px;
-            color: var(--primary-color);
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .filter-btn.active, .filter-btn:hover {
-            background: var(--primary-color);
-            color: rgb(247, 255, 4);
-        }
-        
-        .portfolio-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1.5rem;
-        }
-        
-        .portfolio-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-        
-        .portfolio-item img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            transition: all 0.5s ease;
-        }
-        
-        .portfolio-item:hover img {
-            transform: scale(1.1);
-        }
-        
-        .portfolio-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-        
-        .portfolio-item:hover .portfolio-overlay {
-            opacity: 1;
-        }
-        
-        .portfolio-overlay h4 {
-            color: rgb(9, 239, 255);
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            transform: translateY(20px);
-            transition: transform 0.5s ease;
-        }
-        
-        .portfolio-overlay p {
-            color: var(--accent-color);
-            transform: translateY(20px);
-            transition: transform 0.5s ease;
-        }
-        
-        .portfolio-item:hover .portfolio-overlay h4,
-        .portfolio-item:hover .portfolio-overlay p {
-            transform: translateY(0);
-        }
-        
-        .featured-video {
-            margin-top: 4rem;
-            text-align: center;
-        }
-        
-        .video-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-        
-        /* Contact Section */
-        .contact {
-            background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
-            color: #222222;
-        }
-        
-        .contact .section-title {
-            color: rgb(207, 234, 110);
-        }
-        
-        .contact .section-title::after {
-            background: white;
-        }
-        
-        .contact-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
-        }
-        
-        .contact-info h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .contact-details {
-            margin-bottom: 2rem;
-        }
-        
-        .contact-item {
-            display: flex;
-            margin-bottom: 1rem;
-        }
-        
-        .contact-item i {
-            margin-right: 1rem;
-            font-size: 1.2rem;
-            color: var(--accent-color);
-        }
-        
-        .business-hours {
-            margin-bottom: 2rem;
-        }
-        
-        .business-hours h4 {
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
-        
-        .hours-item {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 0.5rem;
-        }
-        
-        .map-container {
-            height: 300px;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        
-        .contact-form {
-            background: rgb(122, 180, 124);
-            padding: 2rem;
-            color: black;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .contact-form h3 {
-            color: var(--dark-color);
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 0.8rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-family: 'Montserrat', sans-serif;
-        }
-        
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-        
-        .form-control:focus {
-            outline: none;
-            border-color: var(--primary-color);
-        }
-        
-        textarea.form-control {
-            resize: vertical;
-            min-height: 120px;
-        }
-        
-        .submit-btn {
-            background: var(--primary-color);
-            color: rgb(19, 223, 238);
-            border: none;
-            padding: 0.8rem 2rem;
-            border-radius: 4px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            width: 100%;
-        }
-        
-        .submit-btn:hover {
-            background: var(--secondary-color);
-        }
-        
-        /* Footer */
-        .footer {
-            background-color: var(--dark-color);
-            color: var(--light-color);
-            padding: 4rem 0 2rem;
-        }
-        
-        .footer-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-        }
-        
-        .footer-col h4 {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-            position: relative;
-            padding-bottom: 0.5rem;
-        }
-        
-        .footer-col h4::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 2px;
-            background: var(--secondary-color);
-        }
-        
-        .footer-links {
-            list-style: none;
-        }
-        
-        .footer-links li {
-            margin-bottom: 0.8rem;
-        }
-        
-        .footer-links a {
-            text-decoration: none;
-            color: #bbb;
-            transition: color 0.3s ease;
-        }
-        
-        .footer-links a:hover {
-            color: var(--secondary-color);
-            padding-left: 5px;
-        }
-        
-        .footer-social a {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.1);
-            text-align: center;
-            line-height: 40px;
-            border-radius: 50%;
-            margin-right: 10px;
-            color: white;
-            transition: all 0.3s ease;
-        }
-        
-        .footer-social a:hover {
-            background: var(--secondary-color);
-            transform: translateY(-5px);
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 2rem;
-            margin-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.9rem;
-        }
-        
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-        
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        /* Responsive Styles */
-        @media screen and (max-width: 992px) {
-            .hero-name {
-                font-size: 3.5rem;
-            }
-            
-            .hero-profession {
-                font-size: 2.8rem;
-            }
-            
-            .about-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-            
-            .about-img {
-                order: -1;
-            }
-        }
-        
-        @media screen and (max-width: 768px) {
-            .nav-menu {
-                position: fixed;
-                left: -100%;
-                top: 5rem;
-                flex-direction: column;
-                background: linear-gradient(120deg, #eafecb 0%, #aee6ff 100%);
-                width: 100%;
-                text-align: center;
-                transition: 0.3s;
-                box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-                z-index: 10;
-            }
-            
-            .nav-menu.active {
-                left: 0;
-            }
-            
-            .nav-menu.active .nav-link {
-                color: var(--dark-color);
-            }
-            
-            .nav-item {
-                margin: 2.5rem 0;
-            }
-            
-            .hamburger {
-                display: block;
-            }
-            
-            .hamburger.active .bar:nth-child(2) {
-                opacity: 0;
-            }
-            
-            .hamburger.active .bar:nth-child(1) {
-                transform: translateY(8px) rotate(45deg);
-            }
-            
-            .hamburger.active .bar:nth-child(3) {
-                transform: translateY(-8px) rotate(-45deg);
-            }
-            
-            .hero-name {
-                font-size: 2.8rem;
-            }
-            
-            .hero-profession {
-                font-size: 2.2rem;
-                color: var(--accent-color);
-            }
-            
-            .hero-description {
-                font-size: 1rem;
-                padding: 0 15px;
-            }
-            
-            .hero-buttons {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .section-title {
-                font-size: 2rem;
-            }
-            
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        @media screen and (max-width: 576px) {
-            .hero-name {
-                font-size: 2.2rem;
-            }
-            
-            .hero-profession {
-                font-size: 1.8rem;
-            }
-            
-            .hero-tag {
-                font-size: 0.8rem;
-                padding: 6px 15px;
-            }
-        }
-    </style>
+    </script>
 </head>
+
 <body>
-    <!-- Header -->
-    <header class="header" id="header">
+    <!-- ========== SKIP LINK (Accessibility) ========== -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header" role="banner">
         <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">Baral Photo Studio</a>
+            <nav class="navbar" role="navigation" aria-label="Main navigation">
+                <!-- Logo -->
+                <a href="#home" class="logo" aria-label="Baral Photo Studio - Home">
+                    Baral Photo Studio
+                </a>
                 
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="nav-menu" role="menubar">
+                    <li role="none">
+                        <a href="#home" class="nav-link active" role="menuitem" aria-current="page">Home</a>
+                    </li>
+                    <li role="none">
+                        <a href="#about" class="nav-link" role="menuitem">About</a>
+                    </li>
+                    <li role="none">
+                        <a href="#services" class="nav-link" role="menuitem">Services</a>
+                    </li>
+                    <li role="none">
+                        <a href="#portfolio" class="nav-link" role="menuitem">Portfolio</a>
+                    </li>
+                    <li role="none">
+                        <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+                    </li>
                 </ul>
                 
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+                <!-- Mobile Menu Button -->
+                <button 
+                    class="hamburger" 
+                    id="hamburger" 
+                    type="button" 
+                    aria-label="Toggle navigation menu" 
+                    aria-expanded="false" 
+                    aria-controls="nav-menu"
+                >
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
+                </button>
             </nav>
         </div>
+        
+        <!-- Mobile Menu Overlay -->
+        <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
     </header>
 
-    <!-- Hero Section - Redesigned -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <!-- <div class="hero-tag">CAPTURING MOMENTS SINCE 2019</div> -->
-                <h1 class="hero-name">Bishal Baral</h1>
-                <h2 class="hero-profession">Professional Photographer</h2>
-                <p class="hero-description">Specializing in wedding, portrait, and commercial photography with an artistic and natural style that captures your precious moments.</p>
-                <div class="hero-buttons">
-                    <a href="#portfolio" class="hero-btn btn-portfolio">View Portfolio</a>
-                    <a href="#contact" class="hero-btn btn-contact">Contact Me</a>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            Scroll
-            <div class="arrow">
-                <i class="fas fa-chevron-down"></i>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Us Section -->
-<section class="section about" id="about">
-    <div class="container">
-        <h2 class="section-title fade-in">About Us</h2>
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="main-content">
         
-        <!-- Studio Banner -->
-        <div class="studio-banner fade-in" style="width:100%;display:flex;justify-content:center;margin-bottom:2.5rem;">
-            <img src="/img/baral_photo_studio.jpg" alt="Baral Photo Studio Banner" style="width:100%;max-width:1200px;height:360px;object-fit:cover;border-radius:18px;box-shadow:0 4px 32px rgba(44,62,80,0.10);">
-        </div>
-        
-        <!-- Studio Description -->
-        <div class="about-description fade-in" style="max-width:850px;margin:0 auto 3.5rem auto;">
-            <h3 style="font-size:2rem;color:var(--primary-color);margin-bottom:1.2rem; text-align: center;">Baral Photo Studio</h3>
-            <p style="font-size:1.15rem;line-height:1.7;margin-bottom:1.2rem;padding: 0 5vw;">
-                Welcome to Baral Photo Studio! We’re a passionate team of creative professionals specializing in photography and videography. Our studio is dedicated to capturing life’s most meaningful moments with artistry, technical expertise, and a collaborative spirit. Whether it’s weddings, portraits, or special events, we believe every story deserves to be told beautifully.
-            </p>
-            <p style="font-size:1.13rem;line-height:1.7;padding:0 5vw;">
-                With state-of-the-art equipment and years of combined experience, our team strives to deliver exceptional quality and a personalized experience for every client. From candid shots to cinematic films, we work together to make memories last forever!
-            </p>
-            <div class="about-info" style="margin-top:2rem;">
-                <div class="about-info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Kawasoti-2, Savapati Chowk, Nawalpur</span>
-                </div>
-                <div class="about-info-item">
-
-                    <i class="fas fa-phone"></i>
-                    <span>
-                        <a href="tel:+9779821920690">+977 9821920690</a><br>
-                        <a href="tel:+9779846961105">+977 9846961105</a>
-                    </span>
-                </div>
-                <div class="about-info-item">
-                    <i class="fas fa-envelope"></i>
-                    <span><a href="mailto:baralphoto@gmail.com">baralphoto@gmail.com</a></span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Meet Our Team Section -->
-        <div class="team-section fade-in" style="margin-top:2rem;">
-            <h2 class="section-title">Meet Our Team</h2>
-            <div class="team-cards">
-                <!-- Team Member 1 -->
-                <div class="team-card">
-                    <div class="team-photo">
-                        <img src="img/team/ceo.jpg" alt="Bishal Baral">
-                    </div>
-                    <div class="team-info">
-                        <h3>Bishal Baral</h3>
-                        <p class="team-titles">
-                            <span>CEO</span> · 
-                            <span>Photographer</span> · 
-                            <span>Editor</span>
-                        </p>
-                        <p class="team-bio">"I capture moments and turn them into memories you'll cherish forever."</p>
-                    </div>
-                </div>
-                <!-- Team Member 2 -->
-                <div class="team-card">
-                    <div class="team-photo">
-                        <img src="img/team/assistant1.jpg" alt="Pratik Rai Magar">
-                    </div>
-                    <div class="team-info">
-                        <h3>Pratik Rai Magar</h3>
-                        <p class="team-titles">
-                            <span>Photographer</span>
-                        </p>
-                        <p class="team-bio">"Making every shoot smooth and fun—ready to help wherever needed!"</p>
-                    </div>
-                </div>
-                <!-- Team Member 3 -->
-                <div class="team-card">
-                    <div class="team-photo">
-                        <img src="img/team/assistant2.jpg" alt="Bijay Dhakal">
-                    </div>
-                    <div class="team-info">
-                        <h3>Bijay Dhakal</h3>
-                        <p class="team-titles">
-                            <span>Assistant</span> · 
-                        </p>
-                        <p class="team-bio">"Love capturing laughter and candid moments in every event."</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- Services Section -->
-    <section class="section services" id="services">
-        <div class="container">
-            <h2 class="section-title fade-in">Our Services</h2>
-            <div class="services-container">
-                <div class="service-card fade-in">
-                    <div class="service-img">
-                        <img src="img/services/wedding.jpg" alt="Wedding Photography">
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title">Wedding Photography</h3>
-                        <p class="service-text">We capture the emotions, joy, and beautiful moments of your special day with our creative and professional approach to wedding photography.</p>
-                    </div>
-                </div>
-                
-                <div class="service-card fade-in">
-                    <div class="service-img">
-                        <img src="img/services/portrait.jpg" alt="Portrait Photography">
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title">Portrait Photography</h3>
-                        <p class="service-text">Our portrait sessions capture your personality and essence, creating stunning images that will be cherished for generations.</p>
-                    </div>
-                </div>
-                
-                <div class="service-card fade-in">
-                    <div class="service-img">
-                        <img src="img/services/events.jpg" alt="Event Photography">
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title">Special Event Photography</h3>
-                        <p class="service-text">From Rice Feeding Ceremonies to Bratabandha Ceremonies and Maternity Photography, we document your milestone events with care.</p>
-                    </div>
-                </div>
-                
-                <div class="service-card fade-in">
-                    <div class="service-img">
-                        <img src="img/services/videography.jpg" alt="Videography">
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title">Wedding Videography</h3>
-                        <p class="service-text">Our professional videography services create cinematic films that tell the story of your special day with emotion and artistry.</p>
-                    </div>
-                </div>
-                
-                <div class="service-card fade-in">
-                    <div class="service-img">
-                        <img src="img/services/documentary.jpg" alt="Documentary Production">
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title">Documentary Production</h3>
-                        <p class="service-text">We create compelling documentary films and brand documentaries that tell your unique story with professional quality.</p>
-                    </div>
-                </div>
-                
-                <div class="service-card fade-in">
-                    <div class="service-img">
-                        <img src="img/services/editing.jpg" alt="Video Editing">
-                    </div>
-                    <div class="service-content">
-                        <h3 class="service-title">Professional Video Editing</h3>
-                        <p class="service-text">With over 2 years of experience in video editing, we transform raw footage into polished, professional videos that exceed expectations.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="section portfolio" id="portfolio">
-        <div class="container">
-            <h2 class="section-title fade-in">Our Portfolio</h2>
-            
-            <div class="portfolio-filter fade-in">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="wedding">Wedding</button>
-                <button class="filter-btn" data-filter="video">Videography</button>
-                <button class="filter-btn" data-filter="rice-feeding">Rice Feeding</button>
-                <button class="filter-btn" data-filter="bratabandha">Bratabandha</button>
-                <button class="filter-btn" data-filter="maternity">Maternity</button>
-            </div>
-            
-            <div class="portfolio-gallery fade-in">
-                <div class="portfolio-item" data-category="wedding">
-                    <img src="img/portfolio/wedding1.jpg" alt="Wedding Photography">
-                    <div class="portfolio-overlay">
-                        <h4>Wedding Photography</h4>
-                        <p>Traditional Nepali Wedding</p>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="wedding">
-                    <img src="img/portfolio/wedding2.jpg" alt="Wedding Photography">
-                    <div class="portfolio-overlay">
-                        <h4>Wedding Portraits</h4>
-                        <p>Couple Session</p>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="rice-feeding">
-                    <img src="img/portfolio/rice-feeding1.jpg" alt="Rice Feeding Ceremony">
-                    <div class="portfolio-overlay">
-                        <h4>Rice Feeding Ceremony</h4>
-                        <p>Traditional Celebration</p>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="bratabandha">
-                    <img src="img/portfolio/bratabandha1.jpg" alt="Bratabandha Ceremony">
-                    <div class="portfolio-overlay">
-                        <h4>Bratabandha Ceremony</h4>
-                        <p>Coming of Age Ritual</p>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="maternity">
-                    <img src="img/portfolio/maternity1.jpg" alt="Maternity Photography">
-                    <div class="portfolio-overlay">
-                        <h4>Maternity Session</h4>
-                        <p>Capturing the Journey</p>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="video">
-                    <img src="img/portfolio/video1.jpg" alt="Wedding Videography">
-                    <div class="portfolio-overlay">
-                        <h4>Wedding Film</h4>
-                        <p>Cinematic Experience</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="featured-video fade-in">
-                <h3>Featured Wedding Video</h3>
-                
-                <div class="video-container">
-                    <iframe  src="https://www.youtube.com/embed/bc-xSljZdSk" title="Mahendra Weds Narbada Full Wedding Video By Baral Photo Studio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section contact" id="contact">
-        <div class="container">
-            <h2 class="section-title fade-in">Contact Us</h2>
-            
-            <div class="contact-container">
-                <div class="contact-info fade-in">
-                    <h3>Get In Touch</h3>
+        <!-- ========== HERO SECTION ========== -->
+        <section class="hero" id="home" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content">
+                    <!-- Tagline -->
+                    <span class="hero-tagline">Capturing Moments Since 2019</span>
                     
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p>Kawasoti-3, Savapati Chowk, Nawalpur</p>
+                    <!-- Main Heading -->
+                    <h1 id="hero-heading" class="hero-name">Bishal Baral</h1>
+                    
+                    <!-- Profession -->
+                    <p class="hero-profession">Professional Photographer</p>
+                    
+                    <!-- Description -->
+                    <p class="hero-description">
+                        Specializing in wedding, portrait, and commercial photography with an artistic and natural style that captures your most precious moments forever.
+                    </p>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">
+                            <i class="fas fa-images" aria-hidden="true"></i>
+                            View Portfolio
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-calendar-check" aria-hidden="true"></i>
+                            Book a Session
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ABOUT SECTION ========== -->
+        <section class="section about" id="about" aria-labelledby="about-heading">
+            <div class="container">
+                <!-- Section Header -->
+                <header class="section-header">
+                    <h2 id="about-heading" class="section-title">Presents Beegraphy</h2>
+                    <p class="section-description">
+                        Beegraphy aka Baral Photo Studio & Videography
+                    </p>
+                </header>
+                
+                <!-- Studio Banner - Full Width -->
+                <div class="studio-banner-full fade-in">
+                    <img 
+                        src="img/baral_photo_studio.jpg" 
+                        alt="Baral Photo Studio storefront in Kawasoti, Nawalpur - a modern photography studio with professional equipment"
+                        loading="lazy"
+                        width="2048"
+                        height="614"
+                    >
+                </div>
+                
+                <!-- About Content -->
+                <div class="about-content-full fade-in">
+                    <h3>Baral Photo Studio</h3>
+                    <p>
+                        Welcome to Baral Photo Studio! We're a passionate team of creative professionals specializing in photography and videography. Our studio is dedicated to capturing life's most meaningful moments with artistry, technical expertise, and a collaborative spirit.
+                    </p>
+                    <p>
+                        Whether it's weddings, portraits, or special events, we believe every story deserves to be told beautifully. With state-of-the-art equipment and years of combined experience, our team strives to deliver exceptional quality and a personalized experience for every client.
+                    </p>
+                    
+                    <!-- Contact Info -->
+                    <div class="about-info-row">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <div class="info-item-content">
+                                <span>Kawasoti-2, Savapati Chowk, Nawalpur</span>
+                            </div>
                         </div>
-                        
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <p>
-                                <a href="tel:+9779821920690">+977 9821920690</a><br>
+                        <div class="info-item">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <div class="info-item-content">
+                                <a href="tel:+9779821920690">+977 9821920690</a>
+                                <br>
                                 <a href="tel:+9779846961105">+977 9846961105</a>
-                            </p>
+                            </div>
                         </div>
-                
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <p>
+                        <div class="info-item">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <div class="info-item-content">
                                 <a href="mailto:baralphoto@gmail.com">baralphoto@gmail.com</a>
-                            </p>
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="business-hours">
-                        <h4>Business Hours</h4>
-                        <div class="hours-item">
-                            <span>Monday - Saturday:</span>
-                            <span>9:00 AM - 6:00 PM</span>
-                        </div>
-                        <div class="hours-item">
-                            <span>Sunday:</span>
-                            <span>By Appointment</span>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="map-container" style="width: 100%; height: 400px;">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.020216046121!2d84.123722!3d27.642717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39945129cf59c863%3A0xd56c249cea7fb2f2!2sBaral%20photo%20studio!5e0!3m2!1sen!2snp!4v1710270000000!5m2!1sen!2snp" 
-                            width="100%" 
-                            height="100%" 
-                            style="border:0;" 
-                            allowfullscreen 
-                            loading="lazy">
-                        </iframe>
-                    </div>
-                    
-                    
                 </div>
                 
-                <div class="contact-form fade-in">
-                    <h3>Book a Session</h3>
-                    <form id="bookingForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+
+                <!-- Team Section -->
+                <div class="team-section" aria-labelledby="team-heading">
+                    <header class="section-header">
+                        <h3 id="team-heading" class="section-title">Meet the Creators</h3>
+                    </header>
+                    
+                    <div class="team-grid">
+                        <!-- Team Member 1 -->
+                        <article class="team-card fade-in fade-in-delay-1">
+                            <div class="team-photo">
+                                <img 
+                                    src="img/team/ceo.jpg" 
+                                    alt="Bishal Baral - CEO and Lead Photographer at Baral Photo Studio"
+                                    loading="lazy"
+                                    width="140"
+                                    height="140"
+                                >
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                            <div class="team-info">
+                                <h4>Bishal Baral</h4>
+                                <div class="team-titles">
+                                    <span>CEO</span>
+                                    <span>Photographer</span>
+                                    <span>Editor</span>
+                                </div>
+                                <p class="team-bio">"I capture moments and turn them into memories you'll cherish forever."</p>
                             </div>
-                        </div>
+                        </article>
                         
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-                        </div>
+                        <!-- Team Member 2 -->
+                        <article class="team-card fade-in fade-in-delay-2">
+                            <div class="team-photo">
+                                <img 
+                                    src="img/team/assistant1.jpg" 
+                                    alt="Pratik Rai Magar - Photographer at Baral Photo Studio"
+                                    loading="lazy"
+                                    width="140"
+                                    height="140"
+                                >
+                            </div>
+                            <div class="team-info">
+                                <h4>Pratik Rai Magar</h4>
+                                <div class="team-titles">
+                                    <span>Photographer</span>
+                                </div>
+                                <p class="team-bio">"Making every shoot smooth and fun—ready to help wherever needed!"</p>
+                            </div>
+                        </article>
                         
-                        <div class="form-group">
-                            <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="date" class="form-control" id="date" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <select class="form-control" id="serviceType" required>
-                                <option value="" disabled selected>Select Service Type</option>
-                                <option value="wedding">Wedding Photography</option>
-                                <option value="portrait">Portrait Photography</option>
-                                <option value="event">Event Photography</option>
-                                <option value="video">Wedding Videography</option>
-                                <option value="documentary">Documentary Production</option>
-                                <option value="riceFeeding">Rice Feeding Ceremony</option>
-                                <option value="bratabandha">Bratabandha Ceremony</option>
-                                <option value="maternity">Maternity Photography</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <textarea class="form-control" id="message" rows="5" placeholder="Additional Message (Optional)"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">Submit Request</button>
-                    </form>
+                        <!-- Team Member 3 -->
+                        <article class="team-card fade-in fade-in-delay-3">
+                            <div class="team-photo">
+                                <img 
+                                    src="img/team/assistant2.jpg" 
+                                    alt="Bijay Dhakal - Assistant Photographer at Baral Photo Studio"
+                                    loading="lazy"
+                                    width="140"
+                                    height="140"
+                                >
+                            </div>
+                            <div class="team-info">
+                                <h4>Bijay Dhakal</h4>
+                                <div class="team-titles">
+                                    <span>Assistant</span>
+                                </div>
+                                <p class="team-bio">"Love capturing laughter and candid moments in every event."</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+        <!-- ========== SERVICES SECTION ========== -->
+        <section class="section services" id="services" aria-labelledby="services-heading">
+            <div class="container">
+                <!-- Section Header -->
+                <header class="section-header">
+                    <h2 id="services-heading" class="section-title">What we offer</h2>
+                    <p class="section-description">
+                        Basically anything that involves a good camera and skills to capture any moment of your life, we've got your back!
+                    </p>
+                </header>
+                
+                <!-- Services Grid -->
+                <div class="services-grid">
+                    <!-- Service 1: Wedding Photography -->
+                    <article class="service-card fade-in fade-in-delay-1">
+                        <div class="service-image">
+                            <img 
+                                src="img/services/wedding.jpg" 
+                                alt="Beautiful wedding photography capturing the bride and groom's special moment"
+                                loading="lazy"
+                                width="400"
+                                height="220"
+                            >
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Wedding Photography</h3>
+                            <p class="service-description">
+                                We capture the emotions, joy, and beautiful moments of your special day with our creative and professional approach. From traditional ceremonies to candid celebrations, we document it all.
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <!-- Service 2: Portrait Photography -->
+                    <article class="service-card fade-in fade-in-delay-2">
+                        <div class="service-image">
+                            <img 
+                                src="img/services/portrait.jpg" 
+                                alt="Professional portrait photography session in studio with natural lighting"
+                                loading="lazy"
+                                width="400"
+                                height="220"
+                            >
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Portrait Photography</h3>
+                            <p class="service-description">
+                                Our portrait sessions capture your personality and essence, creating stunning images that will be cherished for generations. Perfect for individuals, families, and corporate headshots.
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <!-- Service 3: Event Photography -->
+                    <article class="service-card fade-in fade-in-delay-3">
+                        <div class="service-image">
+                            <img 
+                                src="img/services/events.jpg" 
+                                alt="Special event photography covering cultural ceremonies and celebrations"
+                                loading="lazy"
+                                width="400"
+                                height="220"
+                            >
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Special Event Photography</h3>
+                            <p class="service-description">
+                                From Rice Feeding Ceremonies to Bratabandha and Maternity Photography, we document your milestone events with care and cultural sensitivity.
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <!-- Service 4: Videography -->
+                    <article class="service-card fade-in fade-in-delay-1">
+                        <div class="service-image">
+                            <img 
+                                src="img/services/videography.jpg" 
+                                alt="Cinematic wedding videography capturing emotional moments"
+                                loading="lazy"
+                                width="400"
+                                height="220"
+                            >
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Wedding Videography</h3>
+                            <p class="service-description">
+                                Our professional videography services create cinematic films that tell the story of your special day with emotion, artistry, and stunning visual quality.
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <!-- Service 5: Documentary -->
+                    <article class="service-card fade-in fade-in-delay-2">
+                        <div class="service-image">
+                            <img 
+                                src="img/services/documentary.jpg" 
+                                alt="Documentary film production capturing authentic stories"
+                                loading="lazy"
+                                width="400"
+                                height="220"
+                            >
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Documentary Production</h3>
+                            <p class="service-description">
+                                We create compelling documentary films and brand documentaries that tell your unique story with professional quality and authentic storytelling.
+                            </p>
+                        </div>
+                    </article>
+                    
+                    <!-- Service 6: Editing -->
+                    <article class="service-card fade-in fade-in-delay-3">
+                        <div class="service-image">
+                            <img 
+                                src="img/services/editing.jpg" 
+                                alt="Professional video editing and post-production services"
+                                loading="lazy"
+                                width="400"
+                                height="220"
+                            >
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Professional Video Editing</h3>
+                            <p class="service-description">
+                                With years of experience in video editing, we transform raw footage into polished, professional videos that exceed expectations and captivate audiences.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PORTFOLIO SECTION ========== -->
+        <section class="section portfolio" id="portfolio" aria-labelledby="portfolio-heading">
+            <div class="container">
+                <!-- Section Header -->
+                <header class="section-header">
+                    <h2 id="portfolio-heading" class="section-title">Our Works</h2>
+                    <p class="section-description">
+                        A curated selection of our finest photography and videography work.
+                    </p>
+                </header>
+                
+                <!-- Filter Buttons -->
+                <div class="portfolio-filters fade-in" role="tablist" aria-label="Portfolio filter options">
+                    <button 
+                        class="filter-btn active" 
+                        data-filter="all" 
+                        role="tab" 
+                        aria-selected="true"
+                        aria-controls="portfolio-grid"
+                    >
+                        All
+                    </button>
+                    <button 
+                        class="filter-btn" 
+                        data-filter="wedding" 
+                        role="tab" 
+                        aria-selected="false"
+                        aria-controls="portfolio-grid"
+                    >
+                        Wedding
+                    </button>
+                    <button 
+                        class="filter-btn" 
+                        data-filter="video" 
+                        role="tab" 
+                        aria-selected="false"
+                        aria-controls="portfolio-grid"
+                    >
+                        Videography
+                    </button>
+                    <button 
+                        class="filter-btn" 
+                        data-filter="rice-feeding" 
+                        role="tab" 
+                        aria-selected="false"
+                        aria-controls="portfolio-grid"
+                    >
+                        Rice Feeding
+                    </button>
+                    <button 
+                        class="filter-btn" 
+                        data-filter="bratabandha" 
+                        role="tab" 
+                        aria-selected="false"
+                        aria-controls="portfolio-grid"
+                    >
+                        Bratabandha
+                    </button>
+                    <button 
+                        class="filter-btn" 
+                        data-filter="maternity" 
+                        role="tab" 
+                        aria-selected="false"
+                        aria-controls="portfolio-grid"
+                    >
+                        Maternity
+                    </button>
+                </div>
+                
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid fade-in" id="portfolio-grid" role="tabpanel">
+                    <!-- Portfolio Item 1 -->
+                    <article class="portfolio-item" data-category="wedding" tabindex="0">
+                        <img 
+                            src="img/portfolio/wedding1.jpg" 
+                            alt="Traditional Nepali wedding ceremony with bride and groom in traditional attire"
+                            loading="lazy"
+                            width="400"
+                            height="300"
+                        >
+                        <div class="portfolio-overlay">
+                            <h4>Wedding Photography</h4>
+                            <p>Traditional Nepali Wedding</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Portfolio Item 2 -->
+                    <article class="portfolio-item" data-category="wedding" tabindex="0">
+                        <img 
+                            src="img/portfolio/wedding2.jpg" 
+                            alt="Beautiful wedding portrait of couple during golden hour"
+                            loading="lazy"
+                            width="400"
+                            height="300"
+                        >
+                        <div class="portfolio-overlay">
+                            <h4>Wedding Portraits</h4>
+                            <p>Couple Session</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Portfolio Item 3 -->
+                    <article class="portfolio-item" data-category="rice-feeding" tabindex="0">
+                        <img 
+                            src="img/portfolio/rice-feeding1.jpg" 
+                            alt="Rice feeding ceremony with baby and family members"
+                            loading="lazy"
+                            width="400"
+                            height="300"
+                        >
+                        <div class="portfolio-overlay">
+                            <h4>Rice Feeding Ceremony</h4>
+                            <p>Traditional Celebration</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Portfolio Item 4 -->
+                    <article class="portfolio-item" data-category="bratabandha" tabindex="0">
+                        <img 
+                            src="img/portfolio/bratabandha1.jpg" 
+                            alt="Bratabandha ceremony - traditional coming of age ritual"
+                            loading="lazy"
+                            width="400"
+                            height="300"
+                        >
+                        <div class="portfolio-overlay">
+                            <h4>Bratabandha Ceremony</h4>
+                            <p>Coming of Age Ritual</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Portfolio Item 5 -->
+                    <article class="portfolio-item" data-category="maternity" tabindex="0">
+                        <img 
+                            src="img/portfolio/maternity1.jpg" 
+                            alt="Beautiful maternity photography session capturing the expecting mother"
+                            loading="lazy"
+                            width="400"
+                            height="300"
+                        >
+                        <div class="portfolio-overlay">
+                            <h4>Maternity Session</h4>
+                            <p>Capturing the Journey</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Portfolio Item 6 -->
+                    <article class="portfolio-item" data-category="video" tabindex="0">
+                        <img 
+                            src="img/portfolio/video1.jpg" 
+                            alt="Behind the scenes of wedding videography production"
+                            loading="lazy"
+                            width="400"
+                            height="300"
+                        >
+                        <div class="portfolio-overlay">
+                            <h4>Wedding Film</h4>
+                            <p>Cinematic Experience</p>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Featured Video -->
+                <div class="featured-video fade-in">
+                    <h3>Featured Wedding Video</h3>
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/bc-xSljZdSk" 
+                            title="Mahendra Weds Narbada - Full Wedding Video by Baral Photo Studio"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTACT SECTION ========== -->
+        <section class="section section--dark contact" id="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <!-- Section Header -->
+                <header class="section-header">
+                    <h2 id="contact-heading" class="section-title">Contact Us</h2>
+                    <p class="section-description">
+                        Ready to capture your special moments? Reach out to us today!
+                    </p>
+                </header>
+                
+                <!-- Contact Grid -->
+                <div class="contact-grid">
+                    <!-- Contact Info -->
+                    <div class="contact-info fade-in slide-in-left">
+                        <h3>Let's Connect</h3>
+                        
+                        <!-- Contact Details -->
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Visit Us</h4>
+                                    <p>Kawasoti-2, Savapati Chowk, Nawalpur</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Call Us</h4>
+                                    <p>
+                                        <a href="tel:+9779821920690">+977 9821920690</a><br>
+                                        <a href="tel:+9779846961105">+977 9846961105</a>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Email Us</h4>
+                                    <p>
+                                        <a href="mailto:baralphoto@gmail.com">baralphoto@gmail.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Business Hours -->
+                        <div class="business-hours">
+                            <h4>Business Hours</h4>
+                            <div class="hours-item">
+                                <span>Monday - Saturday</span>
+                                <span>9:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Sunday</span>
+                                <span>By Appointment</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Map -->
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.020216046121!2d84.123722!3d27.642717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39945129cf59c863%3A0xd56c249cea7fb2f2!2sBaral%20photo%20studio!5e0!3m2!1sen!2snp!4v1710270000000!5m2!1sen!2snp" 
+                                title="Baral Photo Studio Location on Google Maps"
+                                loading="lazy"
+                                allowfullscreen
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="contact-form fade-in slide-in-right">
+                        <h3>Book a Session</h3>
+                        
+                        <form id="bookingForm" novalidate>
+                            <!-- Honeypot Field (Anti-spam) -->
+                            <div class="hp-field" aria-hidden="true">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+                            </div>
+                            
+                            <!-- Name Fields -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name <span aria-hidden="true">*</span></label>
+                                    <input 
+                                        type="text" 
+                                        id="firstName" 
+                                        name="firstName"
+                                        class="form-control" 
+                                        placeholder="Enter your first name"
+                                        required
+                                        autocomplete="given-name"
+                                        aria-required="true"
+                                    >
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name <span aria-hidden="true">*</span></label>
+                                    <input 
+                                        type="text" 
+                                        id="lastName" 
+                                        name="lastName"
+                                        class="form-control" 
+                                        placeholder="Enter your last name"
+                                        required
+                                        autocomplete="family-name"
+                                        aria-required="true"
+                                    >
+                                </div>
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email"
+                                    class="form-control" 
+                                    placeholder="your.email@example.com"
+                                    required
+                                    autocomplete="email"
+                                    aria-required="true"
+                                >
+                            </div>
+                            
+                            <!-- Phone -->
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span aria-hidden="true">*</span></label>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    name="phone"
+                                    class="form-control" 
+                                    placeholder="+977 98XXXXXXXX"
+                                    required
+                                    autocomplete="tel"
+                                    aria-required="true"
+                                >
+                            </div>
+                            
+                            <!-- Date -->
+                            <div class="form-group">
+                                <label for="date">Preferred Date <span aria-hidden="true">*</span></label>
+                                <input 
+                                    type="date" 
+                                    id="date" 
+                                    name="date"
+                                    class="form-control" 
+                                    required
+                                    aria-required="true"
+                                >
+                            </div>
+                            
+                            <!-- Service Type -->
+                            <div class="form-group">
+                                <label for="serviceType">Service Type <span aria-hidden="true">*</span></label>
+                                <select 
+                                    id="serviceType" 
+                                    name="serviceType"
+                                    class="form-control" 
+                                    required
+                                    aria-required="true"
+                                >
+                                    <option value="" disabled selected>Select a service</option>
+                                    <option value="wedding">Wedding Photography</option>
+                                    <option value="portrait">Portrait Photography</option>
+                                    <option value="event">Event Photography</option>
+                                    <option value="video">Wedding Videography</option>
+                                    <option value="documentary">Documentary Production</option>
+                                    <option value="riceFeeding">Rice Feeding Ceremony</option>
+                                    <option value="bratabandha">Bratabandha Ceremony</option>
+                                    <option value="maternity">Maternity Photography</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Message -->
+                            <div class="form-group">
+                                <label for="message">Additional Message</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message"
+                                    class="form-control" 
+                                    rows="5" 
+                                    placeholder="Tell us about your event or any special requirements..."
+                                ></textarea>
+                            </div>
+                            
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-submit">
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                                Send Booking Request
+                            </button>
+                            
+                            <!-- Form Status -->
+                            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <div class="footer-container">
-                <div class="footer-col">
+            <div class="footer-grid">
+                <!-- About Column -->
+                <div class="footer-col footer-about">
                     <h4>Baral Photo Studio</h4>
-                    <p>Professional photography and videography services capturing your most precious moments with creativity and expertise.</p>
-                    <div class="footer-social">
-                        <a href="https://www.facebook.com/baralphoto"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/@BeeGraphy"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <p>
+                        Professional photography and videography services capturing your most precious moments with creativity, expertise, and passion.
+                    </p>
+                    <div class="social-links">
+                        <a 
+                            href="https://www.facebook.com/baralphoto" 
+                            class="social-link" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label="Follow us on Facebook"
+                        >
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a 
+                            href="https://www.instagram.com/baralphoto" 
+                            class="social-link" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label="Follow us on Instagram"
+                        >
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a 
+                            href="https://www.youtube.com/@BeeGraphy" 
+                            class="social-link" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label="Subscribe to our YouTube channel"
+                        >
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                        <a 
+                            href="https://www.tiktok.com/@baralphoto" 
+                            class="social-link" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label="Follow us on TikTok"
+                        >
+                            <i class="fab fa-tiktok" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
                 
+                <!-- Quick Links -->
                 <div class="footer-col">
                     <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                    <nav class="footer-links" aria-label="Footer navigation">
+                        <a href="#home">Home</a>
+                        <a href="#about">About Us</a>
+                        <a href="#services">Services</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
                 </div>
                 
+                <!-- Services -->
                 <div class="footer-col">
                     <h4>Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="#services">Wedding Photography</a></li>
-                        <li><a href="#services">Portrait Photography</a></li>
-                        <li><a href="#services">Event Videography</a></li>
-                        <li><a href="#services">Special Events</a></li>
-                        <li><a href="#services">Documentary Production</a></li>
-                    </ul>
+                    <nav class="footer-links" aria-label="Services navigation">
+                        <a href="#services">Wedding Photography</a>
+                        <a href="#services">Portrait Photography</a>
+                        <a href="#services">Event Videography</a>
+                        <a href="#services">Documentary Production</a>
+                        <a href="#services">Video Editing</a>
+                    </nav>
                 </div>
                 
+                <!-- Contact Info -->
                 <div class="footer-col">
-                    <h4>Contact Information</h4>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt"></i> Kawasoti-3, Savapati Chowk, Nawalpur</li>
-                        <li><i class="fas fa-phone"></i> <a href="tel:+9779821920690">+977 9821920690</a><br>
-                            <a href="tel:+9779846961105">+977 9846961105</a></li>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:baralphoto@gmail.com">baralphoto@gmail.com</a></li>
-                    </ul>
+                    <h4>Contact Info</h4>
+                    <div class="footer-links">
+                        <a href="https://maps.google.com/?q=Baral+Photo+Studio+Kawasoti" target="_blank" rel="noopener">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            Kawasoti-2, Nawalpur
+                        </a>
+                        <a href="tel:+9779821920690">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            +977 9821920690
+                        </a>
+                        <a href="mailto:baralphoto@gmail.com">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            baralphoto@gmail.com
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <div class="copyright">
-                <p>&copy; 2025 Baral Photo Studio | All Rights Reserved.</p>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>
+                    &copy; <span id="currentYear">2025</span> Baral Photo Studio. All Rights Reserved.
+                </p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script>
-        // Mobile Menu Toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-        const navLinks = document.querySelectorAll('.nav-link');
-        
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-        
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
-        });
-        
-        // Sticky Header
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('header');
-            if (window.scrollY > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-        
-        // Scroll Animation
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-        
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-        
-        document.querySelectorAll('.fade-in').forEach(element => {
-            observer.observe(element);
-        });
-        
-        // Portfolio Filtering
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const portfolioItems = document.querySelectorAll('.portfolio-item');
-        
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Remove active class from all buttons
-                filterBtns.forEach(btn => btn.classList.remove('active'));
-                
-                // Add active class to clicked button
-                btn.classList.add('active');
-                
-                const filter = btn.getAttribute('data-filter');
-                
-                portfolioItems.forEach(item => {
-                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            });
-        });
-        
-        // Form Validation
-        const bookingForm = document.getElementById('bookingForm');
-        
-        bookingForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Basic form validation
-            const firstName = document.getElementById('firstName').value;
-            const lastName = document.getElementById('lastName').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const date = document.getElementById('date').value;
-            const serviceType = document.getElementById('serviceType').value;
-            
-            if (!firstName || !lastName || !email || !phone || !date || !serviceType) {
-                alert('Please fill in all required fields.');
-                return;
-            }
-            
-            // Email validation
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                alert('Please enter a valid email address.');
-                return;
-            }
-            
-            // Phone validation (basic)
-            const phoneRegex = /^\d{10,}$/;
-            if (!phoneRegex.test(phone.replace(/\D/g, ''))) {
-                alert('Please enter a valid phone number.');
-                return;
-            }
-            
-            // If all validations pass
-            alert('Thank you for your booking request! We will contact you shortly to confirm your appointment.');
-            bookingForm.reset();
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 70,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Baral Photo Studio",
-  "image": "https://baralbishal.com.np/img/photographer.jpg",
-  "@id": "https://example.com/",    
-  "url": "https://example.com/",
-  "telephone": "+9779821920690",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Kawasoti-3, Savapati Chowk",
-    "addressLocality": "Nawalpur",
-    "addressCountry": "NP"
-  },
-  "priceRange": "$$",
-  "areaServed": "Nawalpur",
-  "sameAs": [
-    "https://www.facebook.com/baralphoto",
-    "https://www.youtube.com/@BeeGraphy"
-  ],
-  "description": "Professional wedding, portrait, event photography and videography studio in Nawalpur, Nepal.",
-  "serviceType": [
-    "Wedding Photography",
-    "Portrait Photography",
-    "Event Coverage",
-    "Videography",
-    "Video Editing"
-  ]
-}
-</script>
-
+    <!-- ========== JAVASCRIPT ========== -->
+    <script src="main.js" defer></script>
 </body>
 </html>
