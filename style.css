@@ -468,6 +468,26 @@ p {
 
 .logo:hover { color: var(--color-secondary); }
 
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+    position: relative;
+  }
+  
+  .logo {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    letter-spacing: var(--letter-spacing-normal);
+    text-transform: uppercase;
+  }
+  
+  .hamburger {
+    position: absolute;
+    right: 0;
+  }
+}
+
 .nav-menu {
   display: flex;
   align-items: center;
